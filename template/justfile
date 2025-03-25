@@ -1,0 +1,7 @@
+# https://github.com/casey/just
+
+watch target='seminar-report':
+  typst watch "template/{{target}}.typ"
+
+build target='seminar-report':
+  typst compile --pdf-standard a-2b "template/{{target}}.typ"
