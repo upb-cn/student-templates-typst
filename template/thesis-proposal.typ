@@ -12,10 +12,10 @@
   #grid(
     columns: 2,
     [*Research group:*], [Computer Networks (CN)],
-    [*Study program:*], [\<BSc/MSc Computer Science / Computer Engineering>],
+    [*Study program:*], [BSc/MSc Computer Science / Computer Engineering],
     [*First reviewer:*], [Prof. Dr. Lin Wang],
-    [*Second reviewer:*], [\<Someone at the department with a PhD>],
-    [*Daily supervisor(s):*], [\<Usually our PhD researchers who talk to you on a daily/weekly basis>],
+    [*Second reviewer:*], [Someone at the department with a PhD],
+    [*Daily supervisor(s):*], [Usually our PhD researchers who talk to you on a daily/weekly basis],
   )
 ]
 
@@ -98,6 +98,7 @@ You may also provide a more detailed list of milestones to achieve along the pro
 
 #bibliography("refs.bib")
 
+#pagebreak()
 #heading(numbering: none)[How to Use This Template for Writing]
 
 (Please remove this section when submitting your proposal.)

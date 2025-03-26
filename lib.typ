@@ -28,7 +28,13 @@
     outset: 0em,
     content,
   )
-  v(-0.5em)
 }
 
 #let heading-font = "Linux Biolinum" // https://www.dafont.com/linux-biolinum.font
+
+// https://forum.typst.app/t/1677/5
+#let overlay(color, body) = layout(bounds => {
+  let size = measure(body, ..bounds)
+  body
+  place(top + left, block(..size, fill: color))
+})

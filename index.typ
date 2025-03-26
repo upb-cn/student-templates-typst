@@ -19,15 +19,16 @@
   
   // Text size and paragraph spacing
   set text(size: 9.95pt) // Compatibility with the Latex template
-  set par(leading: 0.7em, justify: true, spacing: 1.5em)
+  set par(leading: 0.68em, justify: true, spacing: 1.3em)
   set grid(column-gutter: 1em, row-gutter: 0.8em)
 
   // Headings
   set heading(numbering: "1.1")
   show heading: set text(font: heading-font, size: 0.86em)
-  show heading: set block(above: 1.5em, below: 1.5em)
+  show heading: set block(above: 1.3em, below: 1.3em)
   show heading.where(level: 1): set text(fill: upb-colors.ultra-blue)
-  show heading.where(level: 3): set text(size: 1.1em)
+  show heading.where(level: 2): set text(size: 0.97em)
+  show heading.where(level: 3): set text(size: 1.05em)
   show heading: it => {
     block(
       if it.numbering == none {
@@ -39,7 +40,7 @@
   }
 
   // Lists and enumerations
-  set list(indent: 1em)
+  set list(indent: 1em, marker: ([•], [-]))
   set enum(indent: 1em)
   set enum(numbering: "1.a.i.")
 
@@ -95,16 +96,31 @@
         set align(bottom)
         if(counter(page).get().at(0) == 1) {
           // First page
-          image("upb-logo.svg", height: .58in)
+          set align(center)
+          box(
+            width: 100% + 36pt * 2,
+            overlay(
+              white.transparentize(50%),
+              stack(
+                dir: ltr,
+                image("upb-logo.svg", height: 42pt),
+                h(1fr),
+                stack(image("upb-triangles.svg", height: 27.7pt), v(1.8pt)),
+                h(3.8pt),
+              ),
+            ),
+          )
+          v(-3pt)
         } else {
           // All other pages
           left-header
           h(1fr)
           right-header
+          
+          v(-0.9em)
+          line(length: 100%, stroke: .4pt)
+          v(-.7em)
         }
-        v(-1.1em)
-        line(length: 100%, stroke: .35pt)
-        v(-.7em)
     }
   )
 
@@ -113,12 +129,13 @@
     heading(numbering: none,  outlined: false, title)
   }
 
-  v(-0.75em)
+  v(-.5em)
 
   if author != none {
     set text(weight: "bold", font: heading-font, size: 1.2em)
     author
     if matriculationNumber != none [~(#matriculationNumber)]
+    v(.5em)
   }
 
   body

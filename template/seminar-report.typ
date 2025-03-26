@@ -10,9 +10,9 @@
   #grid(
     columns: 2,
     [*Research group:*], [Computer Networks (CN)],
-    [*Study program:*], [\<BSc/MSc Computer Science / Computer Engineering>],
+    [*Study program:*], [BSc/MSc Computer Science / Computer Engineering],
     [*Supervisor:*], [Prof. Dr. Lin Wang],
-    [*Paper title:*], [\<Title of the selected paper>],
+    [*Paper title:*], [Title of the selected paper],
   )
 ]
 
@@ -110,7 +110,7 @@ Finally, draw some conclusions as to whether the presented papers have already s
 #pagebreak()
 #heading(numbering: none)[How to Use This Template for Writing]
 
-(Please remove this section when submitting your proposal.)
+(Please remove this section when submitting your seminar report.)
 
 == Subsection Heading
 
