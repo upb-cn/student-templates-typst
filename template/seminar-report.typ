@@ -1,20 +1,16 @@
-#import "/index.typ": *
+#import "/index.typ": upb-cn-report, code
 
 #show: upb-cn-report.with(
   title: "Seminar: XXX (SS24)", // XXX is the name of the seminar
   author: "Your Name",
   matriculationNumber: "Matriculation Number",
+  meta: (
+    ([Research group], [Computer Networks (CN)]),
+    ([Study program], [BSc/MSc Computer Science / Computer Engineering]),
+    ([Supervisor], [Prof. Dr. Lin Wang]),
+    ([Paper title], [Title of the selected paper]),
+  ),
 )
-
-#notebox[
-  #grid(
-    columns: 2,
-    [*Research group:*], [Computer Networks (CN)],
-    [*Study program:*], [BSc/MSc Computer Science / Computer Engineering],
-    [*Supervisor:*], [Prof. Dr. Lin Wang],
-    [*Paper title:*], [Title of the selected paper],
-  )
-]
 
 // Please remove the following part in your report
 The following structure should be followed in general. You may deviate from this structure slightly if you have a good reason to do so. Skipping any parts contained in the structure without proper justification will result in penalties. If you are unsure about your choice, please contact your supervisor.

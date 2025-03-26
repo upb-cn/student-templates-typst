@@ -1,4 +1,4 @@
-#import "/index.typ": *
+#import "/index.typ": upb-cn-report, code
 #import "@preview/timeliney:0.2.0"
 
 #show: upb-cn-report.with(
@@ -6,18 +6,14 @@
   author: "Your Name",
   matriculationNumber: "Matriculation Number",
   left-header: "BSc/MSc Thesis",
+  meta: (
+    ([Research group], [Computer Networks (CN)]),
+    ([Study program], [BSc/MSc Computer Science / Computer Engineering]),
+    ([First reviewer], [Prof. Dr. Lin Wang]),
+    ([Second reviewer], [Someone at the department with a PhD]),
+    ([Daily supervisor(s)], [Usually our PhD researchers who talk to you on a daily/weekly basis]),
+  ),
 )
-
-#notebox[
-  #grid(
-    columns: 2,
-    [*Research group:*], [Computer Networks (CN)],
-    [*Study program:*], [BSc/MSc Computer Science / Computer Engineering],
-    [*First reviewer:*], [Prof. Dr. Lin Wang],
-    [*Second reviewer:*], [Someone at the department with a PhD],
-    [*Daily supervisor(s):*], [Usually our PhD researchers who talk to you on a daily/weekly basis],
-  )
-]
 
 = Introduction <sec:introduction>
 

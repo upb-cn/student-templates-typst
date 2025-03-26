@@ -80,6 +80,7 @@
   matriculationNumber: none,
   left-header: none, // defaults to title
   right-header: none, // defaults to author
+  meta: none, // e.g. (([key1], [value1]), ([key2], [value2]))
   body,
 ) = {
   if left-header == none {
@@ -136,6 +137,15 @@
     author
     if matriculationNumber != none [~(#matriculationNumber)]
     v(.5em)
+  }
+
+  if meta != none {
+    notebox(
+      grid(
+        columns: 2,
+        ..meta.map(((key, value)) => ([*#key:*], value)).flatten(),
+      )
+    )
   }
 
   body
