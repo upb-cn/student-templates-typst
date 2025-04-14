@@ -5,3 +5,6 @@ watch target='seminar-report':
 
 build target='seminar-report':
   typst compile --root . --pdf-standard a-2b "template/{{target}}.typ"
+
+thumbnail:
+  pdftoppm -png template/seminar-report.pdf -r 250 > thumbnail.png

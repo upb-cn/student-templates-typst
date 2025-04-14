@@ -1,4 +1,4 @@
-#import "/index.typ": upb-cn-report, code
+#import "@preview/upb-cn-templates:0.1.0": upb-cn-report, code
 
 #show: upb-cn-report.with(
   title: "Seminar: XXX (SS24)", // XXX is the name of the seminar
@@ -13,7 +13,10 @@
 )
 
 // Please remove the following part in your report
-The following structure should be followed in general. You may deviate from this structure slightly if you have a good reason to do so. Skipping any parts contained in the structure without proper justification will result in penalties. If you are unsure about your choice, please contact your supervisor.
+The following structure should be followed in general.
+You may deviate from this structure slightly if you have a good reason to do so.
+Skipping any parts contained in the structure without proper justification will result in penalties.
+If you are unsure about your choice, please contact your supervisor.
 
 #heading(numbering: none)[Abstract]
 
