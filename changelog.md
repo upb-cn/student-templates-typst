@@ -1,6 +1,6 @@
 # Changelog
 
-## unreleased
+## v0.2.0 (2025-05-12)
 
 - Add thesis template
 

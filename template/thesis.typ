@@ -1,8 +1,12 @@
-#import "@preview/upb-cn-templates:0.1.0": upb-cn-thesis, code
+#import "@preview/upb-cn-templates:0.2.0": upb-cn-thesis, code
 
 #show: upb-cn-thesis.with(
   title: "A Cool Networked System That Will Change the World",
   author: "Max Mustermann",
+  degree: "Master of Sciences",
+  submission-date: datetime.today().display("[month repr:long] [day], [year]"),
+  second-reviewer: "Someone with a PhD",
+  supervisors: ("Supervisor 1",),
   acknowledgement: [
     // Please replace the following text with your own
     Here you can express your appreciation to anyone who has helped you during your thesis work, probably starting from your reviewers and supervisors.

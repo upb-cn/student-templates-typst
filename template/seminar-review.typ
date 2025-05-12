@@ -1,4 +1,4 @@
-#import "@preview/upb-cn-templates:0.1.0": upb-cn-report, code
+#import "@preview/upb-cn-templates:0.2.0": upb-cn-report, code
 
 #show: upb-cn-report.with(
   title: "Seminar: XXX (SS24)", // XXX is the name of the seminar
